@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login Form </title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title">
+            Login Form
+         </div>
+         <form action="theme.html">
+            <div class="field">
+             
+    <input type="text" id="input-name" name="name" required />
+               <label>Enter Your Name</label>
+            </div>
+            <div class="field">
+                <input type="text" id="input-post" name="post" required />
+               <label>Post</label>
+            </div>
+        
+            <div class="field">
+               <input type="submit" onclick="datastore()" value="Login">
+            </div>
+            
+         </form>
+      </div>
+      
+         <script>
+        function datastore(){
+        let valuename=document.getElementById("input-name").value;
+        localStorage.setItem("textvalue",valuename);
+        let valuepost=document.getElementById("input-post").value;
+        localStorage.setItem("textvalue1",valuepost);
+        return false;
+        }
+    </script>
+    
+   </body>
+</html>
